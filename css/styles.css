@@ -1,0 +1,52 @@
+#topBanner, #bottomBanner {
+    background-color: #007BFF; /* Change this to any color you want */
+    color: #fff; /* Change this to any color you want */
+    padding: 1em;
+    text-align: center;
+  }
+  
+  #topBanner {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1; /* This will make sure the banner stays on top of other elements */
+  }
+  
+  #bottomBanner {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    z-index: 1; /* This will make sure the banner stays on top of other elements */
+  }
+
+  body {
+    display: flex;
+    flex-direction: row; /* This makes sure the items line up left to right */
+    min-height: 100vh;
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+  
+  #leftPanel {
+    width: 250px;
+    height: calc(100vh - 120px); 
+    overflow: auto;
+    background-color: #f0f0f0; 
+    border-right: 1px solid #ccc;
+    padding: 1em;
+    position: fixed; /* This makes the left panel stay in place when scrolling */
+  }
+  
+#mainPanel {
+  flex-grow: 1;
+  padding: 1em;
+  margin-left: 276px; /* match the width of the left panel plus its padding */
+}
+  
+
+  
+  #mainPanel {
+    flex-grow: 1;
+    padding: 1em;
+  }
+  
