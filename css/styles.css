@@ -5,9 +5,18 @@
     text-align: center;
   }
   
+  #topBanner img {
+    height: 25px;  /* adjust this to suit your design */
+    width: auto;  /* maintain aspect ratio */
+  }
+
   #topBanner {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: flex-end;
     position: fixed;
-    width: 100%;
+    width: 98%;
     top: 0;
     z-index: 1; /* This will make sure the banner stays on top of other elements */
   }
